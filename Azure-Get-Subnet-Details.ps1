@@ -36,7 +36,7 @@ $allSubnets = @()
 
 # Generate all /24 subnets within the /16 range
 for ($i = 0; $i -lt 256; $i++) {
-    $subnet = "10.211.$i.0/24"
+    $subnet = "10.xxx.$i.0/24"  #CHANGE ME FOR YOUR AZURE ENV
     $allSubnets += [PSCustomObject]@{
         Subnet             = $subnet
         Status             = "Open"
